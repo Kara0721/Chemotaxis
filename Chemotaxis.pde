@@ -3,9 +3,12 @@
  {     
  	//initialize bacteria variables here   
  }   
- void draw()   
+ void draw() 
  {    
- 	//move and show the bacteria   
+for (int i = 0; i < mav.length; i++){
+      mav.walk();
+      mav.show();
+  }
  }  
  class Bacteria    
  {     
