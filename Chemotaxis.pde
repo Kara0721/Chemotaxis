@@ -1,7 +1,7 @@
 Bacteria [] mav;
 void setup(){
  size (300, 300); 
- mav = new Bacteria[50];
+ mav = new Bacteria[10];
   for (int i = 0; i < mav.length; i++){
    mav[i] = new Bacteria();
   }
@@ -20,8 +20,14 @@ class Bacteria {
    myY= 150;
   }
   void walk (){
-   myX = myX + (int)(Math.random()*5)-2; 
-   myY = myY + (int)(Math.random()*5)-2; 
+   if (mouseX > myX)
+    myX = myX + (int)(Math.random()*10)-3; 
+   else 
+    myX = myX + (int)(Math.random()*10)-7;
+   if (mouseY > myY)
+    myY = myY + (int)(Math.random()*10)-3; 
+   else 
+    myY = myY + (int)(Math.random()*10)-7;
   }
   void show (){
     ellipse (myX, myY, 20, 20);
