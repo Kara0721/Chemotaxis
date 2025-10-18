@@ -1,6 +1,7 @@
 Bacteria [] mav = new Bacteria [50];
 void setup() {
   size (400, 400); 
+background (0, 50, 100);
   for (int i = 0; i < mav.length; i++) {
     mav[i] = new Bacteria();
   }
@@ -8,7 +9,6 @@ void setup() {
 void draw() {
   //System.out.println(mouseX);
   //System.out.println(mouseY);
-  background (0, 50, 100);
   fill((int)(Math.random()*170), (int)(Math.random()*150), (int)(Math.random()*256));
   for (int i = 0; i < mav.length; i++) {
     mav[i].walk();
