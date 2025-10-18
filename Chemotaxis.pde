@@ -20,7 +20,6 @@ class Bacteria {
   int myX, myY;
   color myC;
   Bacteria () {
-    myC = color((int)(Math.random()*170), (int)(Math.random()*150), (int)(Math.random()*256));
     myX = 150;
     myY = 150;
   }
@@ -35,7 +34,7 @@ class Bacteria {
     myY = myY + (int)(Math.random()*5)-3;
   }
   void show () {
-    fill(myC);
+    fill((int)(Math.random()*170), (int)(Math.random()*150), (int)(Math.random()*256));
     ellipse (myX, myY, 20, 20);
   }
 }
