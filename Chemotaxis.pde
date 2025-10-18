@@ -15,7 +15,9 @@ void draw() {
     mav[i].show();
   }
 }
-
+void mousePressed(){
+redraw();
+}
 class Bacteria {
   int myX, myY;
   color myC;
