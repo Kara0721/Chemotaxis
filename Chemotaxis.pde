@@ -1,4 +1,4 @@
-Bacteria [] mav = new Bacteria [50];
+Bacteria [] mav = new Bacteria [15];
 void setup() {
   size (400, 400); 
 background (0, 50, 100);
@@ -36,6 +36,6 @@ class Bacteria {
     myY = myY + (int)(Math.random()*5)-3;
   }
   void show () {
-    ellipse (myX, myY, 20, 20);
+    ellipse (myX, myY, 10, 10);
   }
 }
