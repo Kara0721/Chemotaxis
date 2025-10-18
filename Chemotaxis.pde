@@ -36,6 +36,6 @@ class Bacteria {
   }
   void show () {
     fill(myC);
-    ellipse (myX, myY, 10, 10);
+    ellipse (myX, myY, 20, 20);
   }
 }
