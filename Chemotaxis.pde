@@ -1,4 +1,4 @@
-Bacteria [] mav = new Bacteria [100];
+Bacteria [] mav = new Bacteria [50];
 void setup() {
   size (400, 400); 
   for (int i = 0; i < mav.length; i++) {
