@@ -9,7 +9,7 @@ void draw() {
   //System.out.println(mouseX);
   //System.out.println(mouseY);
   background (0, 50, 100);
-  
+  fill((int)(Math.random()*170), (int)(Math.random()*150), (int)(Math.random()*256));
   for (int i = 0; i < mav.length; i++) {
     mav[i].walk();
     mav[i].show();
@@ -36,7 +36,6 @@ class Bacteria {
     myY = myY + (int)(Math.random()*5)-3;
   }
   void show () {
-    fill((int)(Math.random()*170), (int)(Math.random()*150), (int)(Math.random()*256));
     ellipse (myX, myY, 20, 20);
   }
 }
