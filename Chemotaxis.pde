@@ -16,7 +16,7 @@ void draw() {
   }
 }
 void mousePressed(){
-redraw();
+background (0,50,100);
 }
 class Bacteria {
   int myX, myY;
